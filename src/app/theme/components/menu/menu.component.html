@@ -1,0 +1,24 @@
+<mat-toolbar class="top-navbar mat-elevation-z2" fxLayoutAlign="center center">
+    <a mat-button routerLink="/" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Home</a>
+
+    <a mat-button [matMenuTriggerFor]="orders">Orders<mat-icon class="caret">arrow_drop_down</mat-icon></a>
+    <mat-menu #orders="matMenu" [overlapTrigger]="false" class="app-dropdown">
+        <a mat-menu-item routerLink="/products" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Order History</a>
+        <a mat-menu-item [routerLink]="['/products', '2', 'PC All-in-One']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Order by Cabinet</a>
+        <a mat-menu-item routerLink="/contact" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Order by item</a>
+    </mat-menu>
+
+    <a mat-button [matMenuTriggerFor]="credits">Credits<mat-icon class="caret">arrow_drop_down</mat-icon></a>
+    <mat-menu #credits="matMenu" [overlapTrigger]="false" class="app-dropdown">
+        <a mat-menu-item routerLink="/credit-history" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Credit History</a>
+        <a mat-menu-item [routerLink]="['/scan-new-credit', '2', 'PC All-in-One']" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Scan new Credit</a>
+        <a mat-menu-item routerLink="/input-new-credit" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Input new Credit</a>
+        <a mat-menu-item routerLink="/review-credit">Review Credit</a>
+    </mat-menu>
+
+    <a mat-button routerLink="/upc-files" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">UPC Files</a>
+    <a mat-button routerLink="/admin" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Help</a>
+    <a mat-button routerLink="/admin" routerLinkActive="horizontal-active-link" [routerLinkActiveOptions]="{exact:true}">Admin Panel</a>
+
+</mat-toolbar>
+
