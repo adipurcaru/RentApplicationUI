@@ -52,6 +52,8 @@ import { ProductDialogComponent } from './products-carousel/product-dialog/produ
 import { BannersComponent } from './banners/banners.component';
 import { CategoryListComponent } from './category-list/category-list.component';
 import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   imports: [
@@ -90,8 +92,11 @@ import { ConfirmDialogComponent } from './confirm-dialog/confirm-dialog.componen
     MatToolbarModule,
     MatTooltipModule,
     MatStepperModule,
+    MatFormFieldModule,
     PerfectScrollbarModule,
-    PipesModule
+    PipesModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   exports: [
     RouterModule,

@@ -1,0 +1,40 @@
+.form-container{
+    margin-top: 30px;
+
+    /* The image used */
+    // background-image: url("/assets/images/others/football.jpg");
+  
+    /* Control the height of the image */
+    min-height: 380px;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+form {
+    width:350px;
+    display:flex;
+    flex-direction: column;
+}
+
+mat-button{
+    color: black;
+}
+
+::ng-deep .mat-focused .mat-form-field-label {
+    /*change color of label*/
+    color: green !important;
+}
+
+::ng-deep.mat-form-field-underline {
+    /*change color of underline*/
+    background-color: green !important;
+ } 
+  
+::ng-deep.mat-form-field-ripple {
+   /*change color of underline when focused*/
+   background-color: green !important;;
+}

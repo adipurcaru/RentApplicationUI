@@ -27,6 +27,9 @@ import { OptionsComponent } from './theme/components/options/options.component';
 import { FooterComponent } from './theme/components/footer/footer.component';
 
 import { Configuration } from 'msal';
+import { FieldSearchComponent } from './field-search/field-search.component';
+import { FieldListComponent } from './field-list/field-list.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -39,7 +42,8 @@ import { Configuration } from 'msal';
       apiKey: 'AIzaSyA1rF9bttCxRmsNdZYjW7FzIoyrul5jb-s'
     }),
     SharedModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   declarations: [
     AppComponent,
@@ -50,7 +54,9 @@ import { Configuration } from 'msal';
     SidenavMenuComponent,
     BreadcrumbComponent,
     OptionsComponent,
-    FooterComponent    
+    FooterComponent,
+    FieldSearchComponent,
+    FieldListComponent    
   ], 
   providers: [
     AppSettings,

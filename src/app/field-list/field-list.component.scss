@@ -1,0 +1,13 @@
+.example-card{
+    width:25%;
+    height:30%;
+    margin:30px;
+    display: block;
+    cursor: pointer; 
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
