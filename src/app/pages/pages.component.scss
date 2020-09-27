@@ -1,7 +1,7 @@
 .main{
     min-height: 400px;
     min-height: calc(100vh - 288px);
-    padding: 16px;
+    padding: 0;
 }
 .sidenav{
     width: 250px;
@@ -33,4 +33,71 @@
 .logo-container img {
     width:100%;
     height:auto;
+}
+
+mat-icon {
+    margin-bottom: 10px;
+    font-size:50px;
+    width: 50px;
+    height: 50px;
+    color: #9aff26;
+}
+
+.theme-container main{
+    margin:0;
+    padding:0 !important;
+}
+
+.description{
+    color:white;
+    background-color: rgb(0,28,28);
+    padding-top:50px;
+    width:100vw;
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    place-content: center;
+}
+
+p{
+    font-size: 16px;
+    color: lightgray;
+}
+
+.description span {
+    padding-bottom: 15px;
+    //color: #8bff26;
+}
+
+.descrieri-container{
+    padding-bottom: 50px;
+    display:flex;
+    flex-direction: row;
+    text-align: center;
+    place-content: space-around;
+}
+
+.descriere1{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding:10px;
+    font-size:18px;
+    max-width:300px;
+}
+.descriere2{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+    font-size:18px;
+    max-width: 300px;
+}
+.descriere3{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+    font-size:18px;
+    max-width: 300px;
 }

@@ -5,6 +5,7 @@ import { PagesComponent } from './pages/pages.component';
 import { NotFoundComponent } from './pages/not-found/not-found.component';
 import { FieldSearchComponent } from './field-search/field-search.component';
 import { FieldListComponent } from './field-list/field-list.component';
+import { FieldComponent } from './field/field.component';
 
 export const routes: Routes = [
   {
@@ -24,6 +25,8 @@ export const routes: Routes = [
   },
 
   {path: 'terenuri/:oras/:sport', component: FieldListComponent},
+  {path: 'terenuri/:oras/:sport/:teren_id', component: FieldComponent},
+  
   { path: 'admin', loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule) },
   { path: '**', component: NotFoundComponent }
 ];

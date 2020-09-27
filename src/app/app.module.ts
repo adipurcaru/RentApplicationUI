@@ -29,7 +29,9 @@ import { FooterComponent } from './theme/components/footer/footer.component';
 import { Configuration } from 'msal';
 import { FieldSearchComponent } from './field-search/field-search.component';
 import { FieldListComponent } from './field-list/field-list.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HeaderComponent } from './header/header.component';
+import { FieldComponent } from './field/field.component';
 
 
 @NgModule({
@@ -43,7 +45,8 @@ import { FormsModule } from '@angular/forms';
     }),
     SharedModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   declarations: [
     AppComponent,
@@ -56,7 +59,9 @@ import { FormsModule } from '@angular/forms';
     OptionsComponent,
     FooterComponent,
     FieldSearchComponent,
-    FieldListComponent    
+    FieldListComponent,
+    HeaderComponent,
+    FieldComponent    
   ], 
   providers: [
     AppSettings,

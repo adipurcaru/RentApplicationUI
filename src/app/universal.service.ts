@@ -25,4 +25,8 @@ export class UniversalService {
   searchTerenByOrasAndSport(oras: string, sport: string): Observable<Teren[]>{
     return this.http.get<Teren[]>(`http://localhost:8084/rent/field/${sport}/${oras}`);
   }
+
+  getTerenByID(id): Observable<Teren> {
+    return this.http.get<Teren>(`http://localhost:8084/rent/field/${id}`);
+  }
 }

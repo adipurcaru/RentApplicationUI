@@ -1,0 +1,29 @@
+.main-container{
+    display:flex;
+    flex-direction: row;
+    place-content: space-around;
+}
+
+.booking-form-container{
+    max-width:350px;
+    margin-top: 30px;
+}
+
+example-form {
+    display:flex;
+    flex-direction: column;
+}
+
+.timePicker {
+    margin-bottom: 30px;
+    width:100%;
+}
+
+button {
+    width:100%;
+}
+
+mat-form-field {
+
+    width:100%;
+}

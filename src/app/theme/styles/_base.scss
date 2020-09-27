@@ -43,6 +43,8 @@ a{
     max-width: $theme-max-width;
     margin: 0 auto;
     width: 100%;
+    margin:0;
+    padding:0;
 }
 .light-block.mat-card{
     background: rgba(0,0,0,0.03) !important;
@@ -712,7 +714,7 @@ button.swipe-arrow{
 
 @media (min-width: 1380px) {
     .theme-container{
-        max-width: 1400px;
+        max-width: 1600px;
     }
 }
 

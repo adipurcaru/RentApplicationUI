@@ -3,7 +3,7 @@
     padding: 16px 16px 0;
     .subscribe-block{
         padding: 16px 0 32px 0;
-        text-align: center;
+        text-align: left;
         h1, h3{
             line-height: 1;
         }
@@ -23,6 +23,8 @@
                 font-size: 16px;
                 padding: 0 24px;
                 border-radius: 0;
+                background-color: #33691e;
+                color: white !important;
             }
         }
     }
@@ -77,4 +79,12 @@
 
 .sebm-google-map-container {
     height: 220px;
+}
+
+.border-bottom-mute subscribe-block theme-container{
+    place-content: stretch;
+}
+
+#bg-pr{
+    background-color:rgb(28, 28, 28) !important;
 }
