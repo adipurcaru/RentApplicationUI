@@ -19,6 +19,8 @@ export class FieldComponent implements OnInit {
   dateModel: Date = new Date();
   stringDateModel: string = new Date().toString();
 
+  facilities: any;
+
   nume;
   email;
   data;
@@ -40,6 +42,13 @@ export class FieldComponent implements OnInit {
       teren => {
         this.terenSelectat = teren;
         console.log(this.terenSelectat);
+      }
+    )
+
+    this.service.getFacilities().subscribe(
+      facilities => {
+        this.facilities = facilities;
+        console.log(facilities)
       }
     )
 

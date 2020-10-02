@@ -29,4 +29,8 @@ export class UniversalService {
   getTerenByID(id): Observable<Teren> {
     return this.http.get<Teren>(`http://localhost:8084/rent/field/${id}`);
   }
+
+  getFacilities(): Observable<any> {
+    return this.http.get<any>(`http://localhost:8084/rent/facility`);
+  }
 }

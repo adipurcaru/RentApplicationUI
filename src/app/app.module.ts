@@ -32,6 +32,7 @@ import { FieldListComponent } from './field-list/field-list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './header/header.component';
 import { FieldComponent } from './field/field.component';
+import { CustomMapComponent } from './custom-map/custom-map.component';
 
 
 @NgModule({
@@ -61,7 +62,8 @@ import { FieldComponent } from './field/field.component';
     FieldSearchComponent,
     FieldListComponent,
     HeaderComponent,
-    FieldComponent    
+    FieldComponent,
+    CustomMapComponent    
   ], 
   providers: [
     AppSettings,
